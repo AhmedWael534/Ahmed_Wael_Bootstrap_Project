@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>FoodMania | About</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom-styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">🍔🔥 FoodMania</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="bg-light py-2">
+        <div class="container">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">About</li>
+            </ol>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <h1 class="mb-3">About FoodMania</h1>
+        <div class="alert alert-secondary">Family-owned since 2010 — serving fresh flavors daily.</div>
+
+        <div class="row g-4">
+            <div class="col-lg-7">
+                <!-- Accordion -->
+                <div class="accordion" id="aboutAcc">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#mission">Our
+                                Mission</button>
+                        </h2>
+                        <div id="mission" class="accordion-collapse collapse show" data-bs-parent="#aboutAcc">
+                            <div class="accordion-body">Deliver high-quality meals with friendly service and fair
+                                pricing.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#story">Our Story</button>
+                        </h2>
+                        <div id="story" class="accordion-collapse collapse" data-bs-parent="#aboutAcc">
+                            <div class="accordion-body">Started as a small food truck, now a local favorite restaurant.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- List Group -->
+            <div class="col-lg-5">
+                <h5 class="mb-3">Milestones</h5>
+                <div class="list-group">
+                    <span class="list-group-item">2010 — Opened first branch</span>
+                    <span class="list-group-item">2015 — Expanded catering services</span>
+                    <span class="list-group-item">2022 — Additional branches have been opened</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <h3 class="mt-5">Why Choose Us</h3>
+        <ul class="nav nav-tabs" id="whyTabs" role="tablist">
+            <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab"
+                    data-bs-target="#fresh">Fresh</button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#cozy">Cozy</button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#value">Value</button>
+            </li>
+        </ul>
+        <div class="tab-content border border-top-0 p-3">
+            <div class="tab-pane fade show active" id="fresh">Daily sourced ingredients for peak taste.</div>
+            <div class="tab-pane fade" id="cozy">Warm ambience perfect for friends & family.</div>
+            <div class="tab-pane fade" id="value">Great portions at affordable prices.</div>
+        </div>
+
+        <!-- Branches -->
+        <h3 class="mt-5">Our Branches</h3>
+        <ul class="list-unstyled">
+            <li>Alexandria – Smouha</li>
+            <li>Alexandria – Stanley</li>
+            <li>Cairo – Nasr City</li>
+            <li>Giza – Dokki</li>
+
+        </ul>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0">© 2025 FoodMania Restaurant</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom-scripts.js"></script>
+</body>
+
+</html>

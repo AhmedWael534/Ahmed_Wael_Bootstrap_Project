@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>FoodMania | Menu</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom-styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">🍔🔥 FoodMania</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="bg-light py-2">
+        <div class="container">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Menu</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Header + filters -->
+    <header class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <h1 class="display-6">Our Menu</h1>
+            <p class="mb-2">Delicious dishes freshly prepared for you</p>
+
+            <!-- same filters as index -->
+            <div class="btn-group mt-3" role="group" aria-label="Menu filter">
+                <button class="btn btn-outline-light filter-btn active" data-filter="all">All</button>
+                <button class="btn btn-outline-light filter-btn" data-filter="starters">Starters</button>
+                <button class="btn btn-outline-light filter-btn" data-filter="mains">Mains</button>
+                <button class="btn btn-outline-light filter-btn" data-filter="desserts">Desserts</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <div class="row g-4" id="menu-grid">
+            <!-- Pasta -->
+            <div class="col-md-4 menu-item mains">
+                <div class="card h-100 shadow">
+                    <img src="images/pasta.jpg" class="card-img-top" alt="Creamy Pasta">
+                    <div class="card-body">
+                        <h5 class="card-title">Creamy Pasta <span class="badge bg-success">New</span></h5>
+                        <p class="card-text">Cream sauce, herbs, parmesan.</p>
+                        <p class="fw-bold">90 LE</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Burger -->
+            <div class="col-md-4 menu-item mains">
+                <div class="card h-100 shadow">
+                    <img src="images/burger.jpg" class="card-img-top" alt="Burger">
+                    <div class="card-body">
+                        <h5 class="card-title">Beef Burger</h5>
+                        <p class="card-text">Grilled burger with melted cheese and fresh veggies.</p>
+                        <p class="fw-bold">120 LE</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Salad -->
+            <div class="col-md-4 menu-item starters">
+                <div class="card h-100 shadow">
+                    <img src="images/salad.jpg" class="card-img-top" alt="Salad">
+                    <div class="card-body">
+                        <h5 class="card-title">Garden Salad</h5>
+                        <p class="card-text">Fresh greens with house dressing.</p>
+                        <p class="fw-bold">30 LE</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fish -->
+            <div class="col-md-4 menu-item mains">
+                <div class="card h-100 shadow">
+                    <img src="images/fish.jpg" class="card-img-top" alt="Fish">
+                    <div class="card-body">
+                        <h5 class="card-title">Grilled Fish</h5>
+                        <p class="card-text">Served with lemon.</p>
+                        <p class="fw-bold">190 LE</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chicken -->
+            <div class="col-md-4 menu-item mains">
+                <div class="card h-100 shadow">
+                    <img src="images/chicken.jpg" class="card-img-top" alt="Chicken">
+                    <div class="card-body">
+                        <h5 class="card-title">Roasted Chicken</h5>
+                        <p class="card-text">Juicy chicken with herbs & spices.</p>
+                        <p class="fw-bold">170 LE</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cake -->
+            <div class="col-md-4 menu-item desserts">
+                <div class="card h-100 shadow">
+                    <img src="images/cake.jpg" class="card-img-top" alt="Chocolate Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate Cake</h5>
+                        <p class="card-text">Rich & moist chocolate indulgence.</p>
+                        <p class="fw-bold">80 LE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Price table -->
+        <div class="mt-5">
+            <h2 class="mb-3">Price List</h2>
+            <table class="table table-striped table-bordered text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Dish</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Creamy Pasta</td>
+                        <td>Main</td>
+                        <td>90 LE</td>
+                    </tr>
+                    <tr>
+                        <td>Beef Burger</td>
+                        <td>Main</td>
+                        <td>120 LE</td>
+                    </tr>
+                    <tr>
+                        <td>Garden Salad</td>
+                        <td>Starter</td>
+                        <td>30 LE</td>
+                    </tr>
+                    <tr>
+                        <td>Grilled Fish</td>
+                        <td>Main</td>
+                        <td>190 LE</td>
+                    </tr>
+                    <tr>
+                        <td>Roasted Chicken</td>
+                        <td>Main</td>
+                        <td>170 LE</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate Cake</td>
+                        <td>Dessert</td>
+                        <td>80 LE</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pagination -->
+        <nav aria-label="Menu pages" class="mt-3">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled"><span class="page-link">Prev</span></li>
+                <li class="page-item active"><span class="page-link">1</span></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0">© 2025 FoodMania Restaurant</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom-scripts.js"></script>
+</body>
+
+</html>
