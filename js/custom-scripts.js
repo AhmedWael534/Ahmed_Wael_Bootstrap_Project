@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Filtering (index and menu)
+  // Filtering  (index and menu)
   var filterBtns = document.querySelectorAll('.filter-btn');
   var menuItems = document.querySelectorAll('.menu-item');
 
