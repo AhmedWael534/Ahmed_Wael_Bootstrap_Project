@@ -76,7 +76,7 @@ footer {
     }
 }
 
-/* Fixed size of carousel images */
+/* Fixed size of images */
 .carousel-item img {
     width: 100%;
     height: 500px;
